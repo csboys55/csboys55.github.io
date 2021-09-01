@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajánlatkérés</title>
+    <link rel="stylesheet" href="lib/bootstrap-4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div id="menu" class="col-8 text-center">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button onclick="location.href = '/index.html';" class="btn btn-secondary">Főoldal</button>
+                    <button onclick="location.href = '/registration.html';"
+                        class="btn btn-secondary">Ajánlatkérés</button>
+                        <button onclick="location.href = '/gallery.html';" class="btn btn-secondary">Galéria</button>
+                    <button onclick="location.href = '/about.html';" class="btn btn-secondary">Rólunk</button>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8" ,>
+                <h1 id="ajanlat1" class="text-center firstH1 font-weight-bold"> Ajánlatkérés </h1>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1" id="inputName">Email cím:</label>
+                        <input type="email" class="form-control getIn" id="exampleFormControlInput1"
+                            placeholder="nev@pelda.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Választott szolgáltatás</label>
+                        <select class="form-control getIn" id="exampleFormControlSelect1">
+                            <option>Hideg előételek</option>
+                            <option>Hideg főételek</option>
+                            <option>Meleg előétel</option>
+                            <option>Meleg főétel</option>
+                            <option>Több fogásos rendezvény</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Megjegyzés:</label>
+                        <textarea class="form-control getIn" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+                <button id="myForm" class="btn btn-block btn-primary" onclick="getData()" type="button">Ajánlatkérés</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-2"></div>
+    </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
